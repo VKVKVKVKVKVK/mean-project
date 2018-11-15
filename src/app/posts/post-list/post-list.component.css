@@ -1,9 +1,13 @@
-/*Calls the component itself*/
+/*Calls the element itself*/
 :host {
   display: block;
   margin-top: 40px;
 }
 
-.info-test {
+.info-text {
   text-align: center;
+}
+
+.accordion {
+  background-color: #ebebe0;
 }

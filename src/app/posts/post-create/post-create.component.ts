@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
+
+import { PostsService } from '../posts.service';
 
 @Component({
   selector: 'app-post-create',
@@ -7,14 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostCreateComponent implements OnInit {
 
-  public enteredValue : string;
-  public newPost : string;
-  constructor() { }
+  public enteredContent = "";
+  public enteredTitle = "";
+  
+
+  
+  constructor(public postsService: PostsService) { }
 
   ngOnInit() {
   }
 
-  onAddPost() {
-   this.newPost = this.enteredValue;
+  onAddPost(form: NgForm) {
+    if (form.invalid) {
+      return;
+    }
+   
+    this.postsService.addPost(form.value.title, form.value.content);
+    form.resetForm();
   }
 }
