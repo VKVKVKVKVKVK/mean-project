@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { PostListComponent } from './posts/post-list/post-list.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
