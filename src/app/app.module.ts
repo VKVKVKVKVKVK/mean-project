@@ -6,6 +6,7 @@ import { MatCardModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
 import { MatExpansionModule } from '@angular/material';
+import { MatProgressSpinnerModule } from '@angular/material';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
@@ -33,6 +34,7 @@ import { AppRoutingModule } from './app-routing.module';
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
+    MatProgressSpinnerModule,
     HttpClientModule
   ],
   providers: [],

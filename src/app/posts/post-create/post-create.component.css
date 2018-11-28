@@ -4,3 +4,7 @@ mat-form-field, textarea {
 .card {
   background-color: #ebebe0;
 }
+
+mat-spinner {
+  margin: auto;
+}
